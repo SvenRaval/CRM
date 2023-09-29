@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrmBusiness", "Model\CrmBusiness.csproj", "{B144A556-03B6-4AC2-ADA7-71F638F32D4F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrmGui", "WinForm\CrmGui.csproj", "{30436E71-41D3-4724-8038-4508E0F2F619}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B144A556-03B6-4AC2-ADA7-71F638F32D4F} = {B144A556-03B6-4AC2-ADA7-71F638F32D4F}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCrmBusiness", "TestModel\TestCrmBusiness.csproj", "{1DFFCCA7-1439-4CE0-8786-C5B555342432}"
 EndProject

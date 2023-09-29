@@ -10,9 +10,9 @@ namespace CRM
         #endregion private attibutes
 
         #region public methods
-        public void AddContact(Contact contactToAdd)
+        public void AddContacts(List<Contact> contactToAdd)
         {
-            _contacts.Add(contactToAdd);
+            _contacts = contactToAdd;
         }
 
         public List<Contact> Contacts
@@ -21,6 +21,14 @@ namespace CRM
             {
                 return _contacts;
             }
+        }
+        public bool DoesExist(Contact contact)
+        {
+            return _contacts.Contains(contact);
+        }
+        public void Remove(Contact gauthier)
+        {
+            throw new NotImplementedException();
         }
         #endregion public methods
     }
