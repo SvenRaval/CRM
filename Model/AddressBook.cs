@@ -22,7 +22,7 @@ namespace CRM
                 return _contacts;
             }
         }
-        public bool DoesExist(Contact contact)
+        public bool? DoesExist(Contact contact)
         {
             return _contacts.Contains(contact);
         }
@@ -31,5 +31,7 @@ namespace CRM
             throw new NotImplementedException();
         }
         #endregion public methods
+        public class ContactAlreadyExist : Exception { };
+        public class RemoveFailedException : Exception { };
     }
 }

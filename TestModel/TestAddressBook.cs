@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using static CRM.AddressBook;
 
 namespace CRM
 {
@@ -119,6 +120,6 @@ namespace CRM
             //then
             //Exception thrown
         }
-
+        
     }
 }
